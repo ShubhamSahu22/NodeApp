@@ -1,6 +1,12 @@
 pipeline {
           
           agent any
+           tools {
+
+              nodejs 'Nodejs'
+
+        }
+
 
              stages { 
                  stage('github') {
@@ -12,6 +18,28 @@ pipeline {
 
                   }   
                  
+                  stage('install  node dependency') {
+
+                    steps { 
+                         sh 'npm install'
+                                 
+
+                   }    
+
+            }
+
+                   stage('Test case') {
+
+                          steps  { 
+
+                                 sh 'npm test'
+
+                   }
+
+             }
+
+
+
 
       }          
 
