@@ -31,7 +31,7 @@ pipeline {
                      script { 
                              docker.build("nodeimage" + "$Build_NUMBER")
           
-                         {
+                         }
                         
 
                   }  
