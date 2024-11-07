@@ -23,9 +23,8 @@ pipeline {
                          }                    
                      
                    }
-                   stages { 
-                        stage('SonarQube Analysis') { 
-                 
+                    
+                   stage('SonarQube Analysis') { 
                          steps { 
                              
                               withCredentials([string(credentialsId: 'NodeApp-ecs-token', variable: 'SONAR_TOKEN')]) {
@@ -47,11 +46,8 @@ pipeline {
 
                               }              
 
-                         }
-
-                 } 
+                   }
        
-
        }
 
 }
