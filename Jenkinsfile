@@ -6,7 +6,7 @@ pipeline {
        }
       environment {
             SONAR_PROJECT_KEY= 'NodeApp-Token'
-            SONAR_SCANNER_HOME= 'SonarQubeScanner"
+            SONAR_SCANNER_HOME= 'SonarQubeScanner'
 
        }               
         stages {
