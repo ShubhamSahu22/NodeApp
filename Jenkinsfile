@@ -12,7 +12,7 @@ pipeline {
                     stages {
                     stage('github') {
                              steps { 
-                               git branch: 'main', credentialsId: 'docker-jenkine-token-ken', url: 'https://github.com/ShubhamSahu22/NodeApp.git'
+                              git branch: 'main', credentialsId: 'jenkins-token-key', url: 'https://github.com/ShubhamSahu22/NodeApp.git'
                             }
                        }      
                        stage('Unit Test') {  
